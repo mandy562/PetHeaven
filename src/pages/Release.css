@@ -1,0 +1,375 @@
+/* =========================
+   RELEASE PAGE
+========================= */
+
+.release-page {
+  min-height: 75vh;
+  padding: 35px 5% 100px;
+  background: #fff8f2;
+  color: #42352f;
+}
+
+/* =========================
+   RELEASE BANNER
+========================= */
+
+.release-banner {
+  position: relative;
+  width: 100%;
+  min-height: 250px;
+  padding: 55px 30px;
+
+  background-image:
+    linear-gradient(
+      rgba(40, 30, 25, 0.45),
+      rgba(40, 30, 25, 0.45)
+    ),
+    url("/images/how1.jpg");
+
+  background-size: cover;
+  background-position: center 15%;
+  background-repeat: no-repeat;
+
+  border-radius: 20px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  box-sizing: border-box;
+  margin-bottom: 45px;
+}
+
+/* Banner Text */
+
+.release-banner-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1050px;
+  color: #ffffff;
+}
+
+.release-banner-content span {
+  display: block;
+  color: #f5dccb;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.release-banner-content h1 {
+  font-size: clamp(36px, 4vw, 56px);
+  font-weight: 800;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0 0 20px;
+}
+
+.release-banner-content p {
+  font-size: clamp(15px, 1.3vw, 18px);
+  line-height: 1.7;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Two Column Layout */
+
+.release-form {
+  max-width: 1250px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  align-items: start;
+}
+
+/* Cards */
+
+.release-card {
+  min-width: 0;
+  background: #ffffff;
+  padding: 35px;
+  border: 1px solid #f0e4dc;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(66, 53, 47, 0.06);
+}
+
+.release-card h2 {
+  font-size: 25px;
+  color: #42352f;
+  margin: 0 0 10px;
+}
+
+.release-card-description {
+  font-size: 15px;
+  color: #81736d;
+  margin: 0 0 28px;
+}
+
+/* Image Upload */
+
+.release-upload {
+  width: 100%;
+  height: 230px;
+  border: 2px dashed #e8cfc2;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff8f2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.release-upload img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.upload-placeholder {
+  text-align: center;
+  color: #81736d;
+}
+
+.upload-placeholder span {
+  font-size: 42px;
+}
+
+.upload-placeholder p {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-button {
+  display: block;
+  width: fit-content;
+  margin: 18px auto 30px;
+  padding: 12px 24px;
+
+  background: #ffffff;
+  color: #d98567;
+  border: 1px solid #d98567;
+  border-radius: 9px;
+
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-button:hover {
+  background: #d98567;
+  color: #ffffff;
+}
+
+/* Form Fields */
+
+.release-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.release-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.release-field label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #42352f;
+}
+
+.release-field input,
+.release-field select,
+.release-field textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding: 14px 16px;
+
+  border: 1px solid #e7dcd5;
+  border-radius: 10px;
+  background: #ffffff;
+
+  font-family: inherit;
+  font-size: 15px;
+  color: #42352f;
+
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.release-field input:focus,
+.release-field select:focus,
+.release-field textarea:focus {
+  border-color: #d98567;
+}
+
+.release-field textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.release-field input::placeholder,
+.release-field textarea::placeholder {
+  color: #a99d97;
+}
+
+/* Date and Time */
+
+.release-date-time {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+/* Submit Button */
+
+.release-submit {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+
+  background: #d98567;
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.release-submit:hover {
+  background: #bd684d;
+  transform: translateY(-2px);
+}
+
+/* Success Screen */
+
+.release-success {
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 60px 35px;
+
+  background: white;
+  border-radius: 20px;
+  border: 1px solid #f0e4dc;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(66, 53, 47, 0.06);
+}
+
+.success-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 25px;
+
+  border-radius: 50%;
+  background: #f5dccb;
+  color: #bd684d;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.release-success h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.release-success p {
+  color: #81736d;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.release-success button {
+  padding: 14px 32px;
+  background: #d98567;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .release-form {
+    grid-template-columns: 1fr;
+    max-width: 650px;
+  }
+
+  .release-page {
+    padding: 65px 5% 90px;
+  }
+
+  .release-banner {
+    min-height: 260px;
+    padding: 45px 25px;
+    background-position: center;
+    margin-bottom: 30px;
+  }
+
+  .release-banner-content h1 {
+    font-size: 36px;
+  }
+
+  .release-banner-content p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 550px) {
+  .release-page {
+    padding: 45px 4% 70px;
+  }
+
+  .release-banner {
+    min-height: 230px;
+    padding: 35px 20px;
+    border-radius: 14px;
+  }
+
+  .release-banner-content h1 {
+    font-size: 30px;
+  }
+
+  .release-card {
+    padding: 25px 20px;
+  }
+
+  .release-card h2 {
+    font-size: 22px;
+  }
+
+  .release-upload {
+    height: 190px;
+  }
+
+  .release-date-time {
+    grid-template-columns: 1fr;
+  }
+}

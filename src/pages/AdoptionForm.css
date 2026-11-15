@@ -1,0 +1,258 @@
+.adoption-form-page {
+  background: #fff8f2;
+  padding: 65px 6% 100px;
+  min-height: 80vh;
+}
+
+.adoption-form-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.adoption-form-heading span {
+  color: #d98567;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.adoption-form-heading h1 {
+  color: #42352f;
+  font-size: clamp(36px, 4vw, 50px);
+  margin: 15px 0 20px;
+}
+
+.adoption-form-heading p {
+  color: #81736d;
+  font-size: 17px;
+}
+
+.adoption-form-layout {
+  max-width: 1350px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: start;
+}
+
+/* Both cards */
+.adoption-pet-card,
+.adoption-application-card {
+  background: #ffffff;
+  border: 1px solid #f0e4dc;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 8px 25px rgba(66, 53, 47, 0.06);
+}
+
+.adoption-pet-card h2,
+.adoption-application-card h2 {
+  color: #42352f;
+  font-size: 26px;
+  margin: 0 0 10px;
+}
+
+.adoption-pet-card > p,
+.adoption-application-card > p {
+  color: #81736d;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+/* Pet image */
+.adoption-pet-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+.adoption-pet-card h3 {
+  font-size: 28px;
+  color: #42352f;
+  margin: 25px 0;
+}
+
+.adoption-pet-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.adoption-pet-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.adoption-pet-info span {
+  font-size: 13px;
+  color: #81736d;
+}
+
+.adoption-pet-info strong {
+  color: #42352f;
+  font-size: 16px;
+}
+
+.adoption-pet-status {
+  margin-top: 30px;
+  padding: 14px;
+  background: #e4f4e9;
+  color: #287746;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Form */
+.adoption-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 23px;
+}
+
+.adoption-field label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #42352f;
+}
+
+.adoption-field input,
+.adoption-field select,
+.adoption-field textarea {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 15px 16px;
+  border: 1px solid #e4d8d1;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #42352f;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.adoption-field input:focus,
+.adoption-field select:focus,
+.adoption-field textarea:focus {
+  border-color: #d98567;
+}
+
+.adoption-field textarea {
+  resize: vertical;
+}
+
+.adoption-date-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+/* Submit button */
+.adoption-submit-btn {
+  width: 100%;
+  padding: 17px;
+  background: #d98567;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.adoption-submit-btn:hover {
+  background: #bd684d;
+}
+
+/* Success page */
+.adoption-success,
+.adoption-message {
+  min-height: 70vh;
+  padding: 80px 6%;
+  background: #fff8f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.adoption-success-card {
+  max-width: 550px;
+  padding: 55px 45px;
+  background: white;
+  border: 1px solid #f0e4dc;
+  border-radius: 20px;
+}
+
+.success-icon {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 25px;
+  background: #e4f4e9;
+  color: #287746;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.adoption-success-card h1 {
+  color: #42352f;
+  margin-bottom: 20px;
+}
+
+.adoption-success-card p {
+  color: #81736d;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.adoption-back-btn,
+.adoption-message button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 14px 30px;
+  background: #d98567;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .adoption-form-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .adoption-form-page {
+    padding: 40px 5% 65px;
+  }
+
+  .adoption-pet-card,
+  .adoption-application-card {
+    padding: 22px;
+  }
+
+  .adoption-date-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .adoption-pet-image {
+    height: 260px;
+  }
+}

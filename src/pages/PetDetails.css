@@ -1,0 +1,234 @@
+.pet-detail-page {
+  background: #fff8f2;
+  min-height: 80vh;
+  padding: 65px 6% 100px;
+}
+
+.pet-detail-top {
+  max-width: 1350px;
+  margin: 0 auto 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pet-back-link {
+  color: #81736d;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pet-back-link:hover {
+  color: #d98567;
+}
+
+.pet-detail-label,
+.pet-detail-tag {
+  color: #d98567;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* 主体左右两列 */
+.pet-detail-layout {
+  max-width: 1350px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: start;
+}
+
+/* 左侧卡片 */
+.pet-detail-left {
+  background: #ffffff;
+  border: 1px solid #f0e4dc;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(66, 53, 47, 0.06);
+}
+
+.pet-detail-photo {
+  height: 420px;
+  position: relative;
+}
+
+.pet-detail-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.detail-status {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 9px 18px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.detail-status.available {
+  background: #e4f4e9;
+  color: #287746;
+}
+
+.detail-status.in-foster {
+  background: #fff1d8;
+  color: #a16b20;
+}
+
+.detail-status.adopted {
+  background: #eeeeee;
+  color: #777777;
+}
+
+.pet-detail-info {
+  padding: 30px;
+}
+
+.pet-detail-info h2 {
+  color: #42352f;
+  font-size: 32px;
+  margin: 0 0 25px;
+}
+
+.pet-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.pet-info-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pet-info-grid span {
+  font-size: 13px;
+  color: #81736d;
+}
+
+.pet-info-grid strong {
+  color: #42352f;
+  font-size: 16px;
+}
+
+/* 右侧内容 */
+.pet-detail-right {
+  padding: 20px 0;
+}
+
+.pet-detail-right h1 {
+  color: #42352f;
+  font-size: clamp(36px, 4vw, 52px);
+  margin: 15px 0 20px;
+}
+
+.pet-detail-intro {
+  color: #81736d;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+.pet-story-section,
+.pet-personality-section {
+  margin-bottom: 32px;
+}
+
+.pet-detail-right h3 {
+  font-size: 23px;
+  color: #42352f;
+  margin-bottom: 14px;
+}
+
+.pet-story-section p,
+.pet-personality-section p {
+  color: #81736d;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* 领养区域 */
+.pet-adoption-section {
+  background: #ffffff;
+  border: 1px solid #f0e4dc;
+  border-radius: 16px;
+  padding: 28px;
+  margin-top: 35px;
+}
+
+.pet-adoption-section h3 {
+  font-size: 21px;
+}
+
+.pet-adoption-section p {
+  color: #81736d;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.pet-adopt-btn {
+  width: 100%;
+  padding: 16px;
+  background: #d98567;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pet-adopt-btn:hover:not(:disabled) {
+  background: #bd684d;
+}
+
+.pet-adopt-btn:disabled {
+  background: #d5c7c0;
+  cursor: not-allowed;
+}
+
+.pet-not-found {
+  padding: 100px 6%;
+  text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .pet-detail-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .pet-detail-page {
+    padding: 35px 5% 60px;
+  }
+
+  .pet-detail-photo {
+    height: 300px;
+  }
+
+  .pet-detail-info {
+    padding: 22px;
+  }
+
+  .pet-detail-top {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .pet-adoption-section {
+    padding: 20px;
+  }
+}
