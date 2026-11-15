@@ -60,7 +60,7 @@ function Signup() {
         </p>
 
         <img
-          src="/images/hero-pets.jpg"
+          src="/images/login.jpg"
           alt="Dog and cat"
         />
       </div>
